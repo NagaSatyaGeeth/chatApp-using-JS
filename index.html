@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chat app</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="script.js" defer></script>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<header class="text-center text-lg mb-3">Welcome to chat-room</header>
+		<div class="chat-wrapper flex flex-col align-items-center">
+			<div class="flex flex-col items-center">
+				<div class="form-control w-full max-w-xs">
+					<label class="label">
+						<span class="label-text text-black">Enter Username</span>
+					</label>
+					<input
+						type="text"
+						placeholder="Type here"
+						class="user-name input input-bordered w-full text-white max-w-xs"
+					/>
+				</div>
+				<button class="submit-btn btn text-white bg-blue-400">Submit</button>
+			</div>
+			<section class="w-full" style="background-color: #eee">
+				<div class="container py-5">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-8 col-lg-6 col-xl-4">
+							<div class="card" id="chat1" style="border-radius: 15px">
+								<div
+									class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
+									style="
+										border-top-left-radius: 15px;
+										border-top-right-radius: 15px;
+									"
+								>
+									<i class="fas fa-angle-left"></i>
+									<p class="mb-0 fw-bold">Live chat</p>
+									<i class="fas fa-times"></i>
+								</div>
+								<div class="card-body">
+									<div class="chat-content overflow-y-scroll h-96">
+										<div class="d-flex flex-row justify-content-start mb-4">
+											<div class="flex flex-col">
+												<img
+													src="blank-profile-picture.webp"
+													alt="avatar 1"
+													style="width: 45px; height: 100%"
+												/>
+												<p class="text-sm">user name</p>
+											</div>
+											<div
+												class="p-3 ms-3"
+												style="
+													border-radius: 15px;
+													background-color: rgb(96, 165, 250);
+												"
+											>
+												<p class="text-white small mb-0">
+													Hello and thank you for visiting MDBootstrap. Please
+													click the video below.
+												</p>
+											</div>
+										</div>
+
+										<div class="d-flex flex-row justify-content-end mb-4">
+											<div
+												class="p-3 me-3 border"
+												style="border-radius: 15px; background-color: #fbfbfb"
+											>
+												<p class="small mb-0">
+													Thank you, I really like your product.
+												</p>
+											</div>
+											<img
+												src="blank-profile-picture.webp"
+												alt="avatar 1"
+												style="width: 45px; height: 100%"
+											/>
+										</div>
+										<div class="d-flex flex-row justify-content-start mb-4">
+											<img
+												src="blank-profile-picture.webp"
+												alt="avatar 1"
+												style="width: 45px; height: 100%"
+											/>
+											<div
+												class="p-3 ms-3"
+												style="
+													border-radius: 15px;
+													background-color: rgb(96, 165, 250);
+												"
+											>
+												<p class="text-white small mb-0">...</p>
+											</div>
+										</div>
+									</div>
+									<textarea
+										disabled
+										class="msg-text textarea textarea-bordered text-white"
+										placeholder="Enter your message"
+									></textarea>
+									<button
+										disabled
+										class="send-msg-bton btn text-white bg-blue-400"
+									>
+										Send message
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+		></script>
+		;
+	</body>
+</html>
